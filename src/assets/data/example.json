@@ -1,0 +1,30 @@
+
+{
+    "datas" : [
+    {
+      "userId": 1,
+      "id": "Delhi",
+      "name": "Abhishek",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": "Hyderabad",
+      "name": "Karan",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "id": "Gujarat",
+      "name": "Sparsh",
+      "completed": false
+    },
+    {
+      "userId": 4,
+      "id": "Hyderabad",
+      "name": "Nikhil",
+      "completed": true
+    }
+      
+  ]
+}

@@ -1,0 +1,106 @@
+<button style="margin:0;left: 50%;right: 50%;color: Red;" (click)="clicked()">View Data</button>
+<div *ngIf="buttonClicked">
+<table style="width:50% ; float:left;margin-top: 20px">
+  <tr>
+    <th colspan="4">
+      Previous Record
+    </th>
+  </tr>
+  <tr >
+    <th style="text-align:left">Id</th>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">User Id</th>
+    <th style="text-align:left">Status</th>
+  </tr>
+  <tr *ngFor= "let details of DetailList" >
+    <td >{{details.id}}</td>
+    <td>{{details.name}}</td>
+    <td>{{details.userId}}</td>
+    <td>{{details.completed}}</td>
+  </tr>
+</table>
+
+
+<table style="width:48%;float:right;margin-top: 20px">
+  <tr>
+    <th colspan="4">
+      Next Record
+    </th>
+  </tr>
+  <tr >
+    <th style="text-align:left">Id</th>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">User Id</th>
+    <th style="text-align:left">Status</th>
+  </tr>
+  <tr *ngFor= "let other of OtherList" >
+    <td >{{other.id}}</td>
+    <td>{{other.name}}</td>
+    <td>{{other.userId}}</td>
+    <td>{{other.completed}}</td>
+  </tr>
+</table>
+
+
+<button style="margin:0;left: 50%;right: 50%;margin-top:20px;color: blue" (click)="clickedd()"> Simiar Data</button>
+
+</div> 
+
+<!-- 
+<table style=" width:50%;margin-top: 20px">
+  <tr>
+    <th colspan="4">
+      Similar Data
+    </th>
+  </tr>
+  <tr >
+    <th style="text-align:left">Id</th>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">User Id</th>
+    <th style="text-align:left">Status</th>
+  </tr>
+<ng-container *ngFor = "let check of OtherList">
+  <ng-container *ngFor = "let see of DetailList">
+    <ng-container *ngIf = "check.userId !== see.userId">
+      <tr>
+      <td>{{check.id}}</td>
+      <td>{{check.name}}</td>
+      <td>{{check.userId}}</td>
+      <td>{{check.completed}}</td>
+      </tr>
+    </ng-container> 
+  </ng-container>
+</ng-container>
+
+</table>  -->
+
+
+
+<div *ngIf="buttononClicked">
+<table style=" width:50%">
+  <tr>
+    <th colspan="4">
+      Common In Both
+    </th>
+  </tr>
+  <tr >
+    <th style="text-align:left">Id</th>
+    <th style="text-align:left">Name</th>
+    <th style="text-align:left">User Id</th>
+    <th style="text-align:left">Status</th>
+  </tr>
+<ng-container *ngFor = "let Echeck of OtherList">
+  <ng-container *ngFor = "let Esee of DetailList">
+    <ng-container *ngIf = "Echeck.userId === Esee.userId">
+      <tr>
+      <td>{{Echeck.id}}</td>
+      <td>{{Echeck.name}}</td>
+      <td>{{Echeck.userId}}</td>
+      <td>{{Echeck.completed}}</td>
+      </tr>
+    </ng-container> 
+  </ng-container>
+</ng-container>
+
+</table> 
+</div>

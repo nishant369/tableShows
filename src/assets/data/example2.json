@@ -1,0 +1,30 @@
+
+{
+    "datum" : [
+    {
+      "userId": 1,
+      "id": "Delhi",
+      "name": "Abhishek",
+      "completed": false
+    },
+    {
+      "userId": 5,
+      "id": "Faridabad",
+      "name": "Karan",
+      "completed": false
+    },
+    {
+      "userId": 6,
+      "id": "Shalimar",
+      "name": "Spa",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "id": "Gujarat",
+      "name": "Sparsh",
+      "completed": false
+    }
+      
+  ]
+}
